@@ -1,3 +1,7 @@
+# Comprando com desconto
+# Dono de uma uma loja, sugeriu a seguinte proposta: Se comprar minha mercadoria concederei um desconto fixo de 10% e mais 1% a cada unidade comprada
+
+
 # Entrada de Dados
 valorProduto = float(input('Insira o valor do produto desejado: R$'))
 quantidadeProduto = int(input('Insira a quantidade desejada'))
@@ -16,5 +20,5 @@ valorTotalComDesconconto = valorTotalSemDesconto * (1 - (percentualDesconto/100)
 # Saida de dados
 
 print('Valor total sem desconto 'f'{valorTotalSemDesconto:.2f}')
-print('Valor total sem desconto 'f'{valorTotalComDesconconto:.2f}')
+print('Valor total com desconto 'f'{valorTotalComDesconconto:.2f}')
     
