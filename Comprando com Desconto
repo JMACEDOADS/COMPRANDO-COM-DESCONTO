@@ -1,0 +1,20 @@
+# Entrada de Dados
+valorProduto = float(input('Insira o valor do produto desejado: R$'))
+quantidadeProduto = int(input('Insira a quantidade desejada'))
+
+while (quantidadeProduto > 40):
+    quantidadeProduto = int(input('Insira uma quantidade de até 40 itens: '))
+
+descontoInicial = 10
+descontoPorProduto = 1
+
+#Processamento
+valorTotalSemDesconto = valorProduto * quantidadeProduto
+percentualDesconto = descontoInicial + (descontoPorProduto * quantidadeProduto)
+valorTotalComDesconconto = valorTotalSemDesconto * (1 - (percentualDesconto/100))
+
+# Saida de dados
+
+print('Valor total sem desconto 'f'{valorTotalSemDesconto:.2f}')
+print('Valor total sem desconto 'f'{valorTotalComDesconconto:.2f}')
+    
